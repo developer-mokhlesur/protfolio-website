@@ -1,0 +1,211 @@
+img{
+    max-width: 100%;
+}
+/*** Header Section ***/
+.header {
+    background: #8cc536;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 0px 10px 5px #98ee1662;
+}
+.header-left img{
+    width: 87px;
+}
+.header-left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-left ul li{
+    display: inline-block;
+}
+.header-left ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff; 
+    position: relative;
+    margin-top: 5px;
+}
+.header-left ul li a:hover::after{
+    width: 80%;
+}
+.header-left ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: 0.5s;
+}
+.header-right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.header-right ul li {
+    display: inline-block;
+}
+.header-right ul li a {
+    display: inline-block;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #8cc536;
+    transition: 0.5s;
+    margin-top: 7px;
+    
+}
+.header-right ul li a:hover{
+    background: #8cc536;
+    color: #fff;
+}
+.header-right .button {
+    display: inline-block;
+    text-align: right;
+    font-weight: 700;
+    line-height: 40px;
+}
+/*** Banner Section ***/
+.banner{
+    background: url(./Img/IMG_1337-01.jpeg) no-repeat top center;
+    background-size: cover;
+    padding: 155px 0;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000000b3;
+    z-index: -1;
+}
+.banner-text h6 {
+    font-size: 25px;
+    font-weight: 400;
+}
+.banner-text h1 {
+    font-size: 45px;
+}
+.banner-text p {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 32px;
+}
+.banner-text .btn-1 {
+    background: #fcfcfc;
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 35px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+.banner-text .btn-1:hover{
+    color: #fff;
+}
+.banner-text .btn-1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #8cc536;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.banner-text .btn-1:hover::after{
+    width: 100%;
+}
+/*** About Section ***/
+.about{
+    background: #bac1f3;
+}
+.about .text{
+    background: #c2d4ea;
+    color: #4a535e;
+    padding: 35px;
+}
+.about .image{
+    height: 100%;
+}    
+/* Team Application */
+.team .card{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.team h1 {
+	font-size: 45px;
+	padding: 54px 0;
+}
+.team h4 {
+	font-size: 25px;
+	font-weight: 502;
+	padding: 12px 0px;
+}
+.team p {
+	color: #767676;
+	font-size: 20px;
+}
+/* About Application */
+.about-application {
+	background: #f7f9ff;
+	padding: 90px 0;
+}
+.about-application h1 {
+	margin-bottom: 56px;
+}
+.img-div{
+    position:relative;
+    cursor: pointer;
+}
+.hover-inner{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background: rgba(140, 197, 54, 0.44);
+    visibility: hidden;
+    opacity: 0;
+
+}
+.img-div:hover .hover-inner{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+/*Feauter Section  */
+.feauter{
+    padding: 90px 0;
+}
+.card{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
